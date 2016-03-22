@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Chat demo for WebRTC with PeerJS</title>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <h1>Chat demo for WebRTC with PeerJS signaling server</h1>
+        <h4>This is a demo, please check the javascript console for information</h4>
+        <br/>
+        My Name: <input type="text" id="myName">
+        <br/><br/>
+        Your ID: <strong><span id="myId"></span></strong>
+        <br/><i>Note: the Peer ID is automatically generated, wait a few secondes</i>
+        <br/>
+        Peer ID: <input type="text" id="receiverId">
+        <br/>
+        <button id="connect">Connect</button>
+        <br/>
+        <h4>A JSON object will be sent (Username + Message)</h4>
+        <label>Message:</label>
+        <textarea id="msg"></textarea>
+        <br/>
+        <button id="send">Send</button>
+        <br/><br/>
+        <label>Chat below:</label>
+        <pre id="message"></pre>
+    </body>
+
+    <script src="http://cdn.peerjs.com/0.3/peer.min.js"></script>
+    <script src="chat-peerjs.js"></script>
+</html>
