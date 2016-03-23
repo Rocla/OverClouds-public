@@ -60,5 +60,10 @@ document.getElementById('send').addEventListener('click', function(){
     } catch (e) {
       console.log("You are not connected to a peer")
     }
+});
 
+document.getElementById('msg').addEventListener('keyup', function (e) {
+    if(e.which == 13) {
+        document.getElementById('send').click();
+    }
 });
